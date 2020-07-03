@@ -121,7 +121,7 @@ void loop() {
     int previous_peak = -1;
     
     for (int i = 0; i<samples; i++){
-        auto analog = analogRead(A7);
+        auto analog = analogRead(A6);
         auto micline = abs(analog - 512);
 
         nvol = max(micline, nvol);
